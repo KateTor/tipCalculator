@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Tip Calculator</h1>
+    </header>
+
+    <main>
+        
+    <form action="" id="calculator">
+        <div class="inputGroup">
+            <label for="bill">
+                How much is your bill?
+            </label>
+            <div class="inputRow">
+                <span class="prefix">$</span>
+                <input
+                    type="number"
+                    name="bill"
+                    id="bill"
+                    step=".01"
+                    placeholder="0.00">
+            </div><!--inputRow-->
+        </div><!--inputGroup bill-->
+
+            <div class="inputGroup">
+                <label for="tip">
+                    What percentage do you want to tip?
+                </label>
+                <input type="radio" name="tip" value=".10">10%<br />
+                <input type="radio" name="tip" value=".15" checked>15%<br />
+                <input type="radio" name="tip" value=".20">20%
+        </div><!--inputGroup tipPercent-->
+
+        <div class="inputGroup">
+            <label for="totalTip">Total tip</label>
+            <h2>
+                <span class="prefix">$</span>
+                <span id="totalTip">5.00</span>
+            </h2>
+        </div><!--inputGroup totalTip-->
+
+        <div class="inputGroup">
+            <label for="totalBill">Total bill</label>
+            <h2>
+                <span class="prefix">$</span>
+                <span id="totalBill">15.00</span>
+            </h2>
+        </div> <!--inputGroup totalBill-->
+    </form>
+
+    </main> 
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
